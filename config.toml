@@ -1,0 +1,57 @@
+baseurl = "https://martinezsebastian.github.io/web/"
+title = "Sebastián Martínez"
+publishDir = "docs"
+theme = "s_theme"
+themesDir = "themes"
+languageCode = "en-us"
+
+
+disqusShortname = ""
+googleAnalytics = ""
+preserveTaxonomyNames = true
+paginate = 5 #frontpage pagination
+hasCJKLanguage = true
+
+[outputs]
+home = ["HTML", "RSS"]
+
+[params]
+  header_image = "resources/cali_mountain.jpg"
+  SEOTitle = "Sebastián Martínez"
+  slogan = "Ph.D Student - University of Glasgow"
+
+  
+
+  image_404 = "resources/404-bg.jpg"
+  title_404 = "Go back, nothing to see here."
+
+  # leancloud storage for page view counter
+  page_view_conter = false
+  
+
+
+# Sidebar settings
+  sidebar_about_description = "Ph.D. student at the University of Glasgow social networks, their statististical properties, and their possibilities for causal inference."
+  sidebar_avatar = "resources/foto.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+  [params.social]
+  email          = "mail@smartinez.co"
+  twitter        = "https://twitter.com/sbmrtnz/"
+  linkedin       = "https://www.linkedin.com/in/sebasti%C3%A1n-mart%C3%ADnez-00184649/"
+  github         = "https://github.com/martinezsebastian"
+  
+[taxonomies]
+    tag = "tags"
+    link = "tags/"
+
+
+[[menu.main]]
+        name = "Home"
+        url = "#about"
+        weight = 1
+
+
+[[menu.main]]
+        name = "CV"
+        url = "resources/Sebastian_Martinez_CV.pdf"
+        weight = 2
